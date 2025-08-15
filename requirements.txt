@@ -1,0 +1,25 @@
+# Web Framework and Server
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+requests
+beautifulsoup4
+httpx
+
+# AI and OCR Libraries
+google-generativeai
+pillow
+pytesseract
+pinecone
+sentence-transformers
+transformers
+torch
+
+# Transcription & Audio
+openai-whisper
+yt-dlp
+ffmpeg-python
+
+# Utilities
+tqdm
