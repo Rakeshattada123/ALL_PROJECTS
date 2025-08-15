@@ -1,16 +1,16 @@
 from fastapi import FastAPI
-from Project_OCR.main import app as ocr_app
-from Project_RAG.main import app as rag_app
-from Project_Transcription.main import app as transcription_app
-from Project_Webscrap.main import app as webscrap_app
+from project_ocr.main import app as ocr_app
+from project_rag.main import app as rag_app
+from project_transcription.main import app as transcription_app
+from project_webscrap.main import app as webscrap_app
 
 app = FastAPI(title="Combined AI Services")
 
-# Mount each project under its own route
-app.mount("/OCR", ocr_app)
-app.mount("/RAG", rag_app)
-app.mount("/Transcription", transcription_app)
-app.mount("/Webscrap", webscrap_app)
+app.mount("/ocr", ocr_app)
+app.mount("/rag", rag_app)
+app.mount("/transcription", transcription_app)
+app.mount("/webscrap", webscrap_app)
+
 
 @app.get("/")
 async def root():
